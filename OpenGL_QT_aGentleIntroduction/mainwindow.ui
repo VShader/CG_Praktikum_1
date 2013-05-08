@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="MyPanelOpenGL" name="widget_myPanelOpenGL" native="true"/>
+    </item>
+    <item row="0" column="1">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_Sides">
+          <property name="maximumSize">
+           <size>
+            <width>32</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Sides</string>
+          </property>
+          <property name="buddy">
+           <cstring>spinBox_Sides</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QSpinBox" name="spinBox_Sides">
+          <property name="maximumSize">
+           <size>
+            <width>47</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="minimum">
+           <number>3</number>
+          </property>
+          <property name="maximum">
+           <number>60</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_Radius">
+          <property name="maximumSize">
+           <size>
+            <width>32</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Radius</string>
+          </property>
+          <property name="buddy">
+           <cstring>doubleSpinBox_Radius</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_Radius">
+          <property name="maximumSize">
+           <size>
+            <width>47</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="minimum">
+           <double>1.000000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>5.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.100000000000000</double>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_Quit">
+        <property name="minimumSize">
+         <size>
+          <width>87</width>
+          <height>23</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>87</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Quit</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+   <zorder>label_Sides</zorder>
+   <zorder>spinBox_Sides</zorder>
+   <zorder>label_Radius</zorder>
+   <zorder>doubleSpinBox_Radius</zorder>
+   <zorder>pushButton_Quit</zorder>
+   <zorder>widget_myPanelOpenGL</zorder>
+   <zorder>verticalSpacer</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MyPanelOpenGL</class>
+   <extends>QWidget</extends>
+   <header>mypanelopengl.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>doubleSpinBox_Radius</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>widget_myPanelOpenGL</receiver>
+   <slot>changeRadius(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>509</x>
+     <y>128</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>237</x>
+     <y>148</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_Sides</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>widget_myPanelOpenGL</receiver>
+   <slot>changeSides(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>507</x>
+     <y>100</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>232</x>
+     <y>104</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Quit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>537</x>
+     <y>213</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>525</x>
+     <y>317</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
