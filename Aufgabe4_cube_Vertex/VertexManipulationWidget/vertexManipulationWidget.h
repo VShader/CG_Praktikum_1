@@ -2,6 +2,7 @@
 #define VERTEXMANIPULATIONWIDGET_H
 
 #include <QWidget>
+#include <QSignalMapper>
 
 
 namespace Ui {
@@ -15,6 +16,7 @@ class VertexManipulationWidget : public QWidget
 
 private:
     Ui::VertexManipulationWidget *ui;
+    QSignalMapper *mapper;
 
 public:
     explicit VertexManipulationWidget(QWidget *parent = NULL);
@@ -22,6 +24,9 @@ public:
 
 public slots:
     void setVertexColor();
+
+signals:
+    void valueChanged_1(double value);
 
 };
 

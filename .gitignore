@@ -1,4 +1,5 @@
 *.txt.user
+*.autosave
 # C++ objects and libs
 
 *.slo

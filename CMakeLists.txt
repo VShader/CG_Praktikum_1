@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 
-add_subdirectory(Aufgabe1_spinning_square)
-add_subdirectory(Aufgabe2_widget)
-add_subdirectory(Aufgabe3_cube)
+#add_subdirectory(Aufgabe1_spinning_square)
+#add_subdirectory(Aufgabe2_widget)
+#add_subdirectory(Aufgabe3_cube)
 add_subdirectory(Aufgabe4_cube_Vertex)
-add_subdirectory(OpenGL_QT_aGentleIntroduction)
+#add_subdirectory(OpenGL_QT_aGentleIntroduction)
