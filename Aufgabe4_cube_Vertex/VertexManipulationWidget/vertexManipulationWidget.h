@@ -17,6 +17,7 @@ class VertexManipulationWidget : public QWidget
 
 private:
     Ui::VertexManipulationWidget *ui;
+    QVector<QObject *> ptrQObject;
     void init();
     void setButtonColor(QToolButton * const button, const QColor &color);
 
@@ -26,9 +27,11 @@ public:
 
 public slots:
     void setVertexColor();
+    void setVertexCoordiantes();
 
 signals:
-    void vertexChanged(const double x, const double y, const double z, const QColor &color, const int widgetNumber);
+    void vertexCoordinatesChanged(const double x, const double y, const double z, const int widgetNumber);
+    void vertexColorChanged(const QColor &color, const int widgetNumber);
 
 };
 

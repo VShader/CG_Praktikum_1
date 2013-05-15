@@ -47,7 +47,8 @@ private:
     QPoint lastPos;
 
 public slots:
-    void ChangeVertex(const double x, const double y, const double z, const QColor &color, const int widgetNumber);
+    void ChangeVertexCoordinates(const double x, const double y, const double z, const int widgetNumber);
+    void ChangeVertexColor(const QColor &color, const int widgetNumber);
 };
 
 #endif

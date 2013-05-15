@@ -7,20 +7,50 @@
 VertexManipulationWidget::VertexManipulationWidget(QWidget *parent) : QWidget(parent),
     ui(new Ui::VertexManipulationWidget)
 {
+    ptrQObject.append(ui->doubleSpinBox_Vertex_x_0);
+    ptrQObject.append(ui->doubleSpinBox_Vertex_y_0);
+    ptrQObject.append(ui->doubleSpinBox_Vertex_z_0);
+    ptrQObject.append(ui->toolButton_Vertex_0);
+    ptrQObject.append(ui->doubleSpinBox_Vertex_x_1);
+    ptrQObject.append(ui->doubleSpinBox_Vertex_y_1);
+    ptrQObject.append(ui->doubleSpinBox_Vertex_z_1);
+    ptrQObject.append(ui->toolButton_Vertex_1);
+    ptrQObject.append(ui->doubleSpinBox_Vertex_x_2);
+    ptrQObject.append(ui->doubleSpinBox_Vertex_y_2);
+    ptrQObject.append(ui->doubleSpinBox_Vertex_z_2);
+    ptrQObject.append(ui->toolButton_Vertex_2);
+    ptrQObject.append(ui->doubleSpinBox_Vertex_x_3);
+    ptrQObject.append(ui->doubleSpinBox_Vertex_y_3);
+    ptrQObject.append(ui->doubleSpinBox_Vertex_z_3);
+    ptrQObject.append(ui->toolButton_Vertex_3);
+    ptrQObject.append(ui->doubleSpinBox_Vertex_x_4);
+    ptrQObject.append(ui->doubleSpinBox_Vertex_y_4);
+    ptrQObject.append(ui->doubleSpinBox_Vertex_z_4);
+    ptrQObject.append(ui->toolButton_Vertex_4);
+    ptrQObject.append(ui->doubleSpinBox_Vertex_x_5);
+    ptrQObject.append(ui->doubleSpinBox_Vertex_y_5);
+    ptrQObject.append(ui->doubleSpinBox_Vertex_z_5);
+    ptrQObject.append(ui->toolButton_Vertex_5);
+    ptrQObject.append(ui->doubleSpinBox_Vertex_x_6);
+    ptrQObject.append(ui->doubleSpinBox_Vertex_y_6);
+    ptrQObject.append(ui->doubleSpinBox_Vertex_z_6);
+    ptrQObject.append(ui->toolButton_Vertex_6);
+    ptrQObject.append(ui->doubleSpinBox_Vertex_x_7);
+    ptrQObject.append(ui->doubleSpinBox_Vertex_y_7);
+    ptrQObject.append(ui->doubleSpinBox_Vertex_z_7);
+    ptrQObject.append(ui->toolButton_Vertex_7);
     ui->setupUi(this);
 
-    /*
-    connect(ui->doubleSpinBox_Vertex_x_0, SIGNAL(valueChanged(double)), this, SLOT(setVertexColor()));
-    connect(ui->doubleSpinBox_Vertex_x_1, SIGNAL(valueChanged(double)), this, SLOT(setVertexColor()));
-    connect(ui->doubleSpinBox_Vertex_x_2, SIGNAL(valueChanged(double)), this, SLOT(setVertexColor()));
-    connect(ui->doubleSpinBox_Vertex_x_3, SIGNAL(valueChanged(double)), this, SLOT(setVertexColor()));
-    connect(ui->doubleSpinBox_Vertex_x_4, SIGNAL(valueChanged(double)), this, SLOT(setVertexColor()));
-    connect(ui->doubleSpinBox_Vertex_x_5, SIGNAL(valueChanged(double)), this, SLOT(setVertexColor()));
-    connect(ui->doubleSpinBox_Vertex_x_6, SIGNAL(valueChanged(double)), this, SLOT(setVertexColor()));
-    connect(ui->doubleSpinBox_Vertex_x_7, SIGNAL(valueChanged(double)), this, SLOT(setVertexColor()));
-    */
-
     init();
+
+    connect(ui->doubleSpinBox_Vertex_x_0, SIGNAL(valueChanged(double)), this, SLOT(setVertexCoordiantes()));
+    connect(ui->doubleSpinBox_Vertex_x_1, SIGNAL(valueChanged(double)), this, SLOT(setVertexCoordiantes()));
+    connect(ui->doubleSpinBox_Vertex_x_2, SIGNAL(valueChanged(double)), this, SLOT(setVertexCoordiantes()));
+    connect(ui->doubleSpinBox_Vertex_x_3, SIGNAL(valueChanged(double)), this, SLOT(setVertexCoordiantes()));
+    connect(ui->doubleSpinBox_Vertex_x_4, SIGNAL(valueChanged(double)), this, SLOT(setVertexCoordiantes()));
+    connect(ui->doubleSpinBox_Vertex_x_5, SIGNAL(valueChanged(double)), this, SLOT(setVertexCoordiantes()));
+    connect(ui->doubleSpinBox_Vertex_x_6, SIGNAL(valueChanged(double)), this, SLOT(setVertexCoordiantes()));
+    connect(ui->doubleSpinBox_Vertex_x_7, SIGNAL(valueChanged(double)), this, SLOT(setVertexCoordiantes()));
 
     connect(ui->toolButton_Vertex_0, SIGNAL(clicked()), this, SLOT(setVertexColor()));
     connect(ui->toolButton_Vertex_1, SIGNAL(clicked()), this, SLOT(setVertexColor()));
@@ -45,7 +75,21 @@ void VertexManipulationWidget::setVertexColor()
     QString styleSheetStr = tempButton->styleSheet();
     QColor color = QColorDialog::getColor();
     setButtonColor(tempButton, color);
-    vertexChanged(-1, -1, 1, color, 0);
+    vertexColorChanged(color, 0);
+
+}
+
+void VertexManipulationWidget::setVertexCoordiantes()
+{
+    QDoubleSpinBox *tempSpinBox = static_cast<QDoubleSpinBox *>( sender());
+    for(int i=0; i<8; i++)
+    {
+        if(tempSpinBox->objectName().contains(i))
+        {
+            qDebug() << "Hallo SpinBox";
+            break;
+        }
+    }
 }
 
 
