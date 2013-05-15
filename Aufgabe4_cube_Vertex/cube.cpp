@@ -5,21 +5,6 @@
 #include "cube.h"
 
 
-VertexButton::VertexButton(QWidget *parent) : QToolButton(parent)
-{
-
-}
-
-void VertexButton::setButtonColor(const QColor &color)
-{
-    int r, g, b, a;
-    color.getRgb(&r, &g, &b, &a);
-    QString styleSheetStr = QString("* { background-color: rgb(") +
-    QString::number(r) + QString(",") + QString::number(g)
-    + QString(",") + QString::number(b) + QString(")}");
-    this->setStyleSheet(styleSheetStr);
-}
-
 
 
 Cube::Cube(QWidget *parent)
@@ -30,20 +15,16 @@ Cube::Cube(QWidget *parent)
     rotationX = -21.0;
     rotationY = -57.0;
     rotationZ = 0.0;
-    faceColors[0] = Qt::red;
-    faceColors[1] = Qt::green;
-    faceColors[2] = Qt::blue;
-    faceColors[3] = Qt::yellow;
 
-    Point[0] = new VertexPoints(-1.0, -1.0, 1.0, faceColors[1]);   //  4,8 .---. 3,7
-    Point[1] = new VertexPoints(1.0, -1.0, 1.0, faceColors[2]);    //      |   |
-    Point[2] = new VertexPoints(1.0, 1.0, 1.0 , faceColors[0]);    //  1,5 .---. 2,6
-    Point[3] = new VertexPoints(-1.0, 1.0, 1.0, faceColors[3]);
+    Point[0] = new VertexPoints(-1.0, -1.0, 1.0, Qt::green);   //  4,8 .---. 3,7
+    Point[1] = new VertexPoints(1.0, -1.0, 1.0, Qt::blue);    //      |   |
+    Point[2] = new VertexPoints(1.0, 1.0, 1.0 , Qt::red);    //  1,5 .---. 2,6
+    Point[3] = new VertexPoints(-1.0, 1.0, 1.0, Qt::yellow);
 
-    Point[4] = new VertexPoints(-1.0, -1.0, -1.0, faceColors[0]);
-    Point[5] = new VertexPoints(1.0, -1.0, -1.0, faceColors[3]);
-    Point[6] = new VertexPoints(1.0, 1.0, -1.0, faceColors[1]);
-    Point[7] = new VertexPoints(-1.0, 1.0, -1.0, faceColors[2]);
+    Point[4] = new VertexPoints(-1.0, -1.0, -1.0, Qt::red);
+    Point[5] = new VertexPoints(1.0, -1.0, -1.0, Qt::yellow);
+    Point[6] = new VertexPoints(1.0, 1.0, -1.0, Qt::green);
+    Point[7] = new VertexPoints(-1.0, 1.0, -1.0, Qt::blue);
 }
 
 Cube::~Cube()

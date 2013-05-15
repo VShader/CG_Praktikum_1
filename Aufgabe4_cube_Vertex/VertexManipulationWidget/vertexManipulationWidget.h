@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QSignalMapper>
+#include <QToolButton>
 
 
 namespace Ui {
@@ -16,7 +17,8 @@ class VertexManipulationWidget : public QWidget
 
 private:
     Ui::VertexManipulationWidget *ui;
-    QSignalMapper *mapper;
+    void init();
+    void setButtonColor(QToolButton * const button, const QColor &color);
 
 public:
     explicit VertexManipulationWidget(QWidget *parent = NULL);

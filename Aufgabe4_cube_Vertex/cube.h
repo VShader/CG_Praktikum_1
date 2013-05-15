@@ -5,18 +5,6 @@
 #include <QToolButton>
 
 
-class VertexButton : public QToolButton
-{
-    Q_OBJECT
-
-public:
-    VertexButton(QWidget *parent = NULL);
-public slots:
-    void setButtonColor(const QColor &color);
-
-};
-
-
 class VertexPoints : public QObject{
     Q_OBJECT
 

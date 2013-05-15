@@ -20,8 +20,7 @@ VertexManipulationWidget::VertexManipulationWidget(QWidget *parent) : QWidget(pa
     connect(ui->doubleSpinBox_Vertex_x_7, SIGNAL(valueChanged(double)), this, SLOT(setVertexColor()));
     */
 
-    mapper = new QSignalMapper(this);
-//    mapper->setMapping(ui->toolButton_Vertex_0, );
+    init();
 
     connect(ui->toolButton_Vertex_0, SIGNAL(clicked()), this, SLOT(setVertexColor()));
     connect(ui->toolButton_Vertex_1, SIGNAL(clicked()), this, SLOT(setVertexColor()));
@@ -43,17 +42,37 @@ VertexManipulationWidget::~VertexManipulationWidget()
 void VertexManipulationWidget::setVertexColor()
 {
     QToolButton *tempButton = static_cast<QToolButton *>( sender());
+    QString styleSheetStr = tempButton->styleSheet();
     QColor color = QColorDialog::getColor();
-    int r, g, b, a;
-    color.getRgb(&r, &g, &b, &a);
-    QString styleSheetStr = QString("* { background-color: rgb(") +
-    QString::number(r) + QString(",") + QString::number(g)
-    + QString(",") + QString::number(b) + QString(")}");
-    tempButton->setStyleSheet(styleSheetStr);
+    setButtonColor(tempButton, color);
 }
 
 /*void VertexManipulationWidget::valueChanged(double value)
 {
     qDebug() << "Hallo Signal";
 }*/
+
+
+void VertexManipulationWidget::init()
+{
+    setButtonColor(ui->toolButton_Vertex_0, Qt::green);
+    setButtonColor(ui->toolButton_Vertex_1, Qt::blue);
+    setButtonColor(ui->toolButton_Vertex_2, Qt::red);
+    setButtonColor(ui->toolButton_Vertex_3, Qt::yellow);
+    setButtonColor(ui->toolButton_Vertex_4, Qt::red);
+    setButtonColor(ui->toolButton_Vertex_5, Qt::yellow);
+    setButtonColor(ui->toolButton_Vertex_6, Qt::green);
+    setButtonColor(ui->toolButton_Vertex_7, Qt::blue);
+}
+
+
+void VertexManipulationWidget::setButtonColor(QToolButton * const button, const QColor &color)
+{
+    int r, g, b, a;
+    color.getRgb(&r, &g, &b, &a);
+    QString styleSheetStr = QString("* { background-color: rgb(") +
+    QString::number(r) + QString(",") + QString::number(g)
+    + QString(",") + QString::number(b) + QString(")}");
+    button->setStyleSheet(styleSheetStr);
+}
 

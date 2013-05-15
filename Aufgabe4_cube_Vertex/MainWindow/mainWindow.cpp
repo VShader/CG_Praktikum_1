@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent),
     ui->setupUi(this);
     qDebug() << "Hi";
     connect(ui->dockWidgetContents, SIGNAL(valueChanged_1(double)), this, SLOT(printValue(double)));
-//    qDebug() << ui->dockWidgetContents->;
+//    qDebug() << ui->dockWidgetContents
 
 }
 
