@@ -28,7 +28,7 @@ public slots:
     void setVertexColor();
 
 signals:
-    void valueChanged_1(double value);
+    void vertexChanged(const double x, const double y, const double z, const QColor &color, const int widgetNumber);
 
 };
 

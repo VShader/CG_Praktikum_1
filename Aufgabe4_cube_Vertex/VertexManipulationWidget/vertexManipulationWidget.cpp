@@ -45,7 +45,9 @@ void VertexManipulationWidget::setVertexColor()
     QString styleSheetStr = tempButton->styleSheet();
     QColor color = QColorDialog::getColor();
     setButtonColor(tempButton, color);
+    vertexChanged(-1, -1, 1, color, 0);
 }
+
 
 /*void VertexManipulationWidget::valueChanged(double value)
 {

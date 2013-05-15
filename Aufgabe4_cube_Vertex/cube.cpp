@@ -181,12 +181,10 @@ int Cube::faceAtPosition(const QPoint &pos)
 }
 
 
-void Cube::ChangeVertex(const GLfloat x, const GLfloat y, const GLfloat z, const QColor &color, const int widgetNumber)
+void Cube::ChangeVertex(const double x, const double y, const double z, const QColor &color, const int widgetNumber)
 {
-    /*
-    this->vertex[0] = x;
-    this->vertex[1] = y;
-    this->vertex[2] = z;
-    this->color = color;
-    */
+    Point[widgetNumber]->color = color;
+    Point[widgetNumber]->vertex[0] = (GLfloat)x;
+    Point[widgetNumber]->vertex[1] = (GLfloat)y;
+    Point[widgetNumber]->vertex[2] = (GLfloat)z;
 }
