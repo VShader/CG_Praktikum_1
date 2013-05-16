@@ -29,13 +29,43 @@
         </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_x_0"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_x_0">
+         <property name="minimum">
+          <double>-99.989999999999995</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+         <property name="value">
+          <double>-1.000000000000000</double>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_y_0"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_y_0">
+         <property name="minimum">
+          <double>-99.989999999999995</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+         <property name="value">
+          <double>-1.000000000000000</double>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_z_0"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_z_0">
+         <property name="minimum">
+          <double>-99.989999999999995</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+         <property name="value">
+          <double>1.000000000000000</double>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="QToolButton" name="toolButton_Vertex_0">
@@ -59,13 +89,43 @@
         </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_x_1"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_x_1">
+         <property name="minimum">
+          <double>-99.989999999999995</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+         <property name="value">
+          <double>1.000000000000000</double>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_y_1"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_y_1">
+         <property name="minimum">
+          <double>-99.989999999999995</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+         <property name="value">
+          <double>-1.000000000000000</double>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_z_1"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_z_1">
+         <property name="minimum">
+          <double>-99.989999999999995</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+         <property name="value">
+          <double>1.000000000000000</double>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="QToolButton" name="toolButton_Vertex_1">
@@ -89,13 +149,43 @@
         </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_x_2"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_x_2">
+         <property name="minimum">
+          <double>-99.989999999999995</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+         <property name="value">
+          <double>1.000000000000000</double>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_y_2"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_y_2">
+         <property name="minimum">
+          <double>-99.989999999999995</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+         <property name="value">
+          <double>1.000000000000000</double>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_z_2"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_z_2">
+         <property name="minimum">
+          <double>-99.989999999999995</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+         <property name="value">
+          <double>1.000000000000000</double>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="QToolButton" name="toolButton_Vertex_2">
@@ -119,13 +209,43 @@
         </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_x_3"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_x_3">
+         <property name="minimum">
+          <double>-99.989999999999995</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+         <property name="value">
+          <double>-1.000000000000000</double>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_y_3"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_y_3">
+         <property name="minimum">
+          <double>-99.989999999999995</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+         <property name="value">
+          <double>1.000000000000000</double>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_z_3"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_z_3">
+         <property name="minimum">
+          <double>-99.989999999999995</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+         <property name="value">
+          <double>1.000000000000000</double>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="QToolButton" name="toolButton_Vertex_3">
@@ -149,13 +269,43 @@
         </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_x_4"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_x_4">
+         <property name="minimum">
+          <double>-99.989999999999995</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+         <property name="value">
+          <double>-1.000000000000000</double>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_y_4"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_y_4">
+         <property name="minimum">
+          <double>-99.989999999999995</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+         <property name="value">
+          <double>-1.000000000000000</double>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_z_4"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_z_4">
+         <property name="minimum">
+          <double>-99.989999999999995</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+         <property name="value">
+          <double>-1.000000000000000</double>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="QToolButton" name="toolButton_Vertex_4">
@@ -179,13 +329,43 @@
         </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_x_5"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_x_5">
+         <property name="minimum">
+          <double>-99.989999999999995</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+         <property name="value">
+          <double>1.000000000000000</double>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_y_5"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_y_5">
+         <property name="minimum">
+          <double>-99.989999999999995</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+         <property name="value">
+          <double>-1.000000000000000</double>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_z_5"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_z_5">
+         <property name="minimum">
+          <double>-99.989999999999995</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+         <property name="value">
+          <double>-1.000000000000000</double>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="QToolButton" name="toolButton_Vertex_5">
@@ -209,13 +389,43 @@
         </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_x_6"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_x_6">
+         <property name="minimum">
+          <double>-99.989999999999995</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+         <property name="value">
+          <double>1.000000000000000</double>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_y_6"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_y_6">
+         <property name="minimum">
+          <double>-99.989999999999995</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+         <property name="value">
+          <double>1.000000000000000</double>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_z_6"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_z_6">
+         <property name="minimum">
+          <double>-99.989999999999995</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+         <property name="value">
+          <double>-1.000000000000000</double>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="QToolButton" name="toolButton_Vertex_6">
@@ -239,13 +449,43 @@
         </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_x_7"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_x_7">
+         <property name="minimum">
+          <double>-99.989999999999995</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+         <property name="value">
+          <double>-1.000000000000000</double>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_y_7"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_y_7">
+         <property name="minimum">
+          <double>-99.989999999999995</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+         <property name="value">
+          <double>1.000000000000000</double>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_z_7"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_Vertex_z_7">
+         <property name="minimum">
+          <double>-99.989999999999995</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+         <property name="value">
+          <double>-1.000000000000000</double>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="QToolButton" name="toolButton_Vertex_7">

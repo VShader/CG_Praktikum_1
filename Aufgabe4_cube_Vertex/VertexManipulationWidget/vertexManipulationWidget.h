@@ -4,6 +4,8 @@
 #include <QWidget>
 #include <QSignalMapper>
 #include <QToolButton>
+#include <QDoubleSpinBox>
+#include <vector>
 
 
 namespace Ui {
@@ -17,7 +19,8 @@ class VertexManipulationWidget : public QWidget
 
 private:
     Ui::VertexManipulationWidget *ui;
-    QVector<QObject *> ptrQObject;
+    QVector<QDoubleSpinBox *> ptrQObject;
+    QDoubleSpinBox *ptrArray[24];
     void init();
     void setButtonColor(QToolButton * const button, const QColor &color);
 

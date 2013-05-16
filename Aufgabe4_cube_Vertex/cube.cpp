@@ -186,6 +186,7 @@ void Cube::ChangeVertexCoordinates(const double x, const double y, const double 
     Point[widgetNumber]->vertex[0] = (GLfloat)x;
     Point[widgetNumber]->vertex[1] = (GLfloat)y;
     Point[widgetNumber]->vertex[2] = (GLfloat)z;
+    updateGL();
 }
 
 
