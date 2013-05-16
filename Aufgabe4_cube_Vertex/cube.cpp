@@ -17,8 +17,8 @@ Cube::Cube(QWidget *parent)
     rotationZ = 0.0;
 
     Point[0] = new VertexPoints(-1.0, -1.0, 1.0, Qt::green);   //  4,8 .---. 3,7
-    Point[1] = new VertexPoints(1.0, -1.0, 1.0, Qt::blue);    //      |   |
-    Point[2] = new VertexPoints(1.0, 1.0, 1.0 , Qt::red);    //  1,5 .---. 2,6
+    Point[1] = new VertexPoints(1.0, -1.0, 1.0, Qt::blue);     //      |   |
+    Point[2] = new VertexPoints(1.0, 1.0, 1.0 , Qt::red);      //  1,5 .---. 2,6
     Point[3] = new VertexPoints(-1.0, 1.0, 1.0, Qt::yellow);
 
     Point[4] = new VertexPoints(-1.0, -1.0, -1.0, Qt::red);
@@ -78,6 +78,7 @@ void Cube::mouseMoveEvent(QMouseEvent *event)
     lastPos = event->pos();
 }
 
+/*
 void Cube::mouseDoubleClickEvent(QMouseEvent *event)
 {
     int face = faceAtPosition(event->pos());
@@ -89,6 +90,7 @@ void Cube::mouseDoubleClickEvent(QMouseEvent *event)
         }
     }
 }
+*/
 
 void Cube::draw()
 {
